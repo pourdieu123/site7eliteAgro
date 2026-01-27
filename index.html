@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7Elite Agro - Agriculture Durable & Transition Écologique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/96/000000/wheat.png">
+</head>
+<body>
+    <!-- En-tête avec navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span class="logo-text">7Elite <span class="logo-agro">Agro</span></span>
+                </div>
+                
+                <!-- Menu pour mobile -->
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Navigation -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#accueil" class="nav-link active">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Nos services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#apropos" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fondateur" class="nav-link">Notre Fondateur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Bouton d'action -->
+                <div class="nav-cta">
+                    <button class="btn btn-primary" id="contactBtn">
+                        <i class="fas fa-envelope"></i> Nous contacter
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Accueil avec Slider -->
+        <section id="accueil" class="hero-section">
+            <div class="slider-container" id="sliderContainer">
+                <div class="slider">
+                    <!-- Slide 1 -->
+                    <div class="slide active">
+                        <div class="slide-content">
+                            <h1>Agriculture Durable & Responsable</h1>
+                            <p class="text-justify">7Elite Agro accompagne les agriculteurs vers une production respectueuse de l'environnement et économiquement viable.</p>
+                            <a href="#services" class="btn btn-light">Découvrir nos services</a>
+                        </div>
+                        <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"></div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h1>Agroéquipements Innovants</h1>
+                            <p class="text-justify">Nous fournissons des équipements agricoles modernes et performants pour optimiser votre productivité.</p>
+                            <a href="#services" class="btn btn-light">En savoir plus</a>
+                        </div>
+                        <div class="slide-image" style="background-image: url('image/1.jpg')"></div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="slide-content">
+                            <h1>Transition Écologique</h1>
+                            <p class="text-justify">Nous vous aidons à mettre en place des pratiques agricoles respectueuses des ressources naturelles.</p>
+                            <a href="#apropos" class="btn btn-light">Notre mission</a>
+                        </div>
+                        <div class="slide-image" style="background-image: url('image/2.jpg')"></div>
+                    </div>
+                </div>
+                
+                <!-- Contrôles du slider -->
+                <button class="slider-control prev" id="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-control next" id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Indicateurs du slider -->
+                <div class="slider-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                </div>
+            </div>
+            
+            <!-- Section d'intro -->
+            <div class="intro-section">
+                <div class="container">
+                    <div class="intro-content">
+                        <h2>Expert en Production Agricole Responsable</h2>
+                        <p class="text-justify">7Elite Agro est une entreprise engagée dans la production agricole responsable, l'accompagnement des agriculteurs et la valorisation des ressources naturelles. Notre mission est de promouvoir une agriculture durable qui concilie performance économique et respect de l'environnement.</p>
+                        <div class="intro-stats">
+                            <div class="stat">
+                                <h3>+0</h3>
+                                <p>Agriculteurs accompagnés</p>
+                            </div>
+                            <div class="stat">
+                                <h3>0</h3>
+                                <p>Années d'expérience</p>
+                            </div>
+                            <div class="stat">
+                                <h3>100%</h3>
+                                <p>Engagement écologique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nos Services</h2>
+                    <p class="section-subtitle text-justify">Des solutions complètes pour une agriculture moderne et responsable</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Agriculture Durable</h3>
+                        <p class="text-justify">Conseils et mise en place de pratiques agricoles respectueuses de l'environnement, optimisation des rendements tout en préservant les ressources naturelles.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Techniques de conservation des sols</li>
+                            <li><i class="fas fa-check-circle"></i> Gestion de l'eau raisonnée</li>
+                            <li><i class="fas fa-check-circle"></i> Agriculture de précision</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                        <h3>Agroéquipements</h3>
+                        <p class="text-justify">Fourniture d'équipements agricoles innovants et performants, adaptés à vos besoins spécifiques pour optimiser votre productivité.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Matériel dernière génération</li>
+                            <li><i class="fas fa-check-circle"></i> Maintenance et SAV</li>
+                            <li><i class="fas fa-check-circle"></i> Formation à l'utilisation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h3>Transition Écologique</h3>
+                        <p class="text-justify">Accompagnement dans votre transition vers des modèles agricoles durables, réduction de l'empreinte environnementale, valorisation des déchets.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Audit énergétique</li>
+                            <li><i class="fas fa-check-circle"></i> Plans de transition</li>
+                            <li><i class="fas fa-check-circle"></i> Financements écologiques</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section id="apropos" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">À propos de 7Elite Agro</h2>
+                    <p class="section-subtitle text-justify">Notre histoire, notre mission et nos valeurs</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="image/3.jpg" alt="7Elite Agro">
+                    </div>
+                    <div class="about-text">
+                        <h3>Notre engagement pour une agriculture responsable</h3>
+                        <p class="text-justify">7Elite Agro est une entreprise innovante dans le secteur agro-industriel, née de la vision d'un ingénieur en BTP passionné par le développement durable et l'entrepreneuriat.</p>
+                        <p class="text-justify">Notre mission est de révolutionner l'agriculture traditionnelle en y apportant des solutions techniques innovantes, une approche entrepreneuriale et un engagement fort en faveur du développement durable.</p>
+                        <p class="text-justify">Nous combinons expertise technique, vision entrepreneuriale et respect de l'environnement pour créer des modèles agricoles à la fois performants et responsables.</p>
+                        
+                        <div class="values">
+                            <div class="value">
+                                <i class="fas fa-handshake"></i>
+                                <h4>Engagement</h4>
+                                <p class="text-justify">Nous nous engageons auprès de chaque agriculteur pour des résultats durables.</p>
+                            </div>
+                            <div class="value">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>Innovation</h4>
+                                <p class="text-justify">Nous recherchons constamment des solutions innovantes pour améliorer les pratiques agricoles.</p>
+                            </div>
+                            <div class="value">
+                                <i class="fas fa-heart"></i>
+                                <h4>Respect</h4>
+                                <p class="text-justify">Le respect de la terre et des ressources naturelles est au cœur de notre philosophie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Notre Fondateur -->
+        <section id="fondateur" class="founder-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Notre Fondateur</h2>
+                    <p class="section-subtitle text-justify">L'homme à l'origine de 7Elite Agro</p>
+                </div>
+                
+                <div class="founder-content">
+                    <div class="founder-image">
+                        <img src="image/5.jpg" alt="Fondateur de 7Elite Agro">
+                        <div class="founder-name">Amos HOUEWATONOU</div>
+                        <div class="founder-title">Fondateur & Directeur Général</div>
+                    </div>
+                    <div class="founder-text">
+                        <h3>Une vision pour l'agriculture de demain</h3>
+                        <p class="text-justify">Diplômé d'une prestigieuse école d'ingénierie en BTP, Amos HOUEWATONOU a consacré plus de 15 ans à la direction de projets de construction d'envergure, développant ainsi une expertise solide en gestion de projet, innovation technique et développement durable.</p>
+                        <p class="text-justify">Animé par une passion pour l'entrepreneuriat et conscient des enjeux agro-environnementaux contemporains, il a choisi d'investir son capital et son expertise dans le secteur agro-industriel. Convaincu que les principes d'ingénierie et d'innovation peuvent transformer l'agriculture traditionnelle, il fonde 7Elite Agro en 2026.</p>
+                        <p class="text-justify">Sa double compétence en ingénierie de projet et en développement d'entreprise lui permet d'apporter une approche novatrice au secteur agricole, alliant rigueur technique, vision entrepreneuriale et engagement environnemental.</p>
+                        
+                        <blockquote>
+                            <p class="text-justify">"L'agriculture n'est pas seulement une activité économique, c'est un engagement envers notre terre et notre avenir. Chez 7Elite Agro, nous croyons en une agriculture qui nourrit les hommes tout en préservant la planète."</p>
+                            <cite>Amos HOUEWATONOU</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contactez-nous</h2>
+                    <p class="section-subtitle text-justify">Nous sommes à votre écoute pour tous vos projets agricoles</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Nos coordonnées</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>123 Rue de l'Agriculture<br>75000 Paris, France</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+33 1 23 45 67 89</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@7eliteagro.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horaires d'ouverture</h4>
+                                <p>Lun - Ven : 9h00 - 18h00<br>Samedi : 9h00 - 12h00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-media">
+                            <h4>Suivez-nous</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Envoyez-nous un message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" placeholder="Sujet" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Envoyer le message
+                            </button>
+                            <div id="formMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <i class="fas fa-leaf"></i>
+                        <span class="logo-text">7Elite <span class="logo-agro">Agro</span></span>
+                    </div>
+                    <p class="text-justify">Expert en agriculture durable, agroéquipements et transition écologique.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Nos services</a></li>
+                        <li><a href="#apropos">À propos</a></li>
+                        <li><a href="#fondateur">Notre Fondateur</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li>Agriculture durable</li>
+                        <li>Agroéquipements</li>
+                        <li>Transition écologique</li>
+                        <li>Conseil agricole</li>
+                        <li>Formation</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p class="text-justify">Inscrivez-vous pour recevoir nos actualités et conseils.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 7Elite Agro. Tous droits réservés.</p>
+                <div class="legal-links">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
