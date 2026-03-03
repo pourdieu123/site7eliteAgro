@@ -3,254 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7Elite Terra · Ingénierie des territoires durables</title>
-    <!-- Polices & icônes -->
+    <title>7Elite Terra · ingénierie des territoires durables</title>
+    <!-- Google Fonts : Inter + Space Grotesk -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (gratuit) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS (animations) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar" id="navbar">
-    <div class="container nav-container">
-        <a href="#" class="logo">7ELITE<span>TERRA</span></a>
-        <ul class="nav-menu">
-            <li><a href="#accueil" class="nav-link active">Accueil</a></li>
-            <li><a href="#vision" class="nav-link">Vision</a></li>
-            <li><a href="#divisions" class="nav-link">Domaines</a></li>
-            <li><a href="#approche" class="nav-link">Approche</a></li>
-            <li><a href="#mot-fondateur" class="nav-link">Fondateur</a></li>
-            <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-        </div>
+    <!-- LOADER -->
+    <div id="loader-wrapper" class="loader-hidden">
+        <div class="loader"></div>
     </div>
-</nav>
 
-<!-- HERO / ACCUEIL -->
-<section id="accueil" class="hero">
-    <div class="container hero-grid">
-        <div class="hero-text">
-            <h1 class="reveal-up">Ingénierie des écosystèmes durables, des territoires résilients</h1>
-            <p class="reveal-up delay-1">7Elite Terra conçoit, transforme et sécurise les territoires durables de demain. Une approche systémique alliant environnement, production, climat et urbanisme.</p>
-            <div class="hero-btns reveal-up delay-2">
-                <a href="#divisions" class="btn btn-primary">Explorer nos domaines</a>
-                <a href="#contact" class="btn btn-outline">Nous contacter</a>
-            </div>
-        </div>
-        <div class="hero-visual reveal">
-            <div class="globe-icon">
-                <i class="fas fa-globe-americas"></i>
-            </div>
-            <div class="floating-elements">
-                <span class="leaf"><i class="fas fa-seedling"></i></span>
-                <span class="building"><i class="fas fa-city"></i></span>
-                <span class="water"><i class="fas fa-droplet"></i></span>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- CURSOR PERSONNALISÉ (optionnel mais pro) -->
+    <div class="custom-cursor"></div>
 
-<!-- QUI SOMMES-NOUS ? (extrait 1) -->
-<section class="section bg-light">
-    <div class="container">
-        <div class="section-header">
-            <span class="subtitle">7Elite Terra</span>
-            <h2>La branche territoriale du groupe 7Elite</h2>
-        </div>
-        <div class="grid-2">
-            <div class="card reveal-slide-left">
-                <i class="fas fa-draw-polygon fa-2x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
-                <h3>Architecte des territoires et des écosystèmes</h3>
-                <p>Nous accompagnons États, villes, organisations et grands projets dans la mise en place de systèmes territoriaux durables capables d’anticiper les besoins futurs, de renforcer la résilience et de préserver le vivant.</p>
-            </div>
-            <div class="card reveal-slide-right">
-                <i class="fas fa-chart-line fa-2x" style="color: var(--primary); margin-bottom: 1.5rem;"></i>
-                <h3>Diagnostic → conception → transformation</h3>
-                <p>Notre positionnement stratégique couvre tout le cycle de la transition territoriale et environnementale, avec une vision à long terme et une ingénierie de pointe.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- NOTRE VISION -->
-<section id="vision" class="section">
-    <div class="container">
-        <div class="section-header">
-            <span class="subtitle">Boussole</span>
-            <h2>Notre vision</h2>
-        </div>
-        <div class="vision-block reveal">
-            <p class="vision-quote">« Concevoir des territoires durables, résilients et performants, capables d’évoluer, de s’adapter et d’anticiper les besoins futurs tout en respectant les équilibres du vivant. »</p>
-            <div class="vision-pillars">
-                <div class="pillar"><i class="fas fa-water"></i> Gérer les ressources</div>
-                <div class="pillar"><i class="fas fa-leaf"></i> Produire responsable</div>
-                <div class="pillar"><i class="fas fa-sun-plant-wilt"></i> Adapter les villes</div>
-                <div class="pillar"><i class="fas fa-tree"></i> Restaurer les milieux</div>
-                <div class="pillar"><i class="fas fa-map"></i> Sécuriser les usages</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- APPROCHE (systémique, anticipatrice, ingénierie) -->
-<section id="approche" class="section bg-secondary">
-    <div class="container">
-        <div class="section-header">
-            <span class="subtitle">Méthodologie</span>
-            <h2>Une approche intégrée</h2>
-        </div>
-        <div class="grid-3">
-            <div class="card approach-card reveal">
-                <i class="fas fa-circle-nodes fa-2x"></i>
-                <h3>Systémique</h3>
-                <p>Chaque territoire est un système vivant complexe où sols, eau, biodiversité, climat et activités humaines sont interdépendants.</p>
-            </div>
-            <div class="card approach-card reveal delay-1">
-                <i class="fas fa-binoculars fa-2x"></i>
-                <h3>Anticipatrice</h3>
-                <p>Nos solutions répondent aux défis actuels ET futurs : démographie, climat, raréfaction des ressources, évolution des usages.</p>
-            </div>
-            <div class="card approach-card reveal delay-2">
-                <i class="fas fa-brain fa-2x"></i>
-                <h3>Ingénierie & décision</h3>
-                <p>Études, ingénierie, pilotage et aide à la décision stratégique pour sécuriser les choix sur le long terme.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- DIVISIONS (NOS MÉTIERS) -->
-<section id="divisions" class="section">
-    <div class="container">
-        <div class="section-header">
-            <span class="subtitle">Expertises</span>
-            <h2>Nos divisions</h2>
-            <p>7 pôles complémentaires pour couvrir l’ensemble des enjeux territoriaux.</p>
-        </div>
-
-        <div class="divisions-grid">
-            <!-- AgroSystems -->
-            <div class="division-card reveal">
-                <div class="div-icon"><i class="fas fa-tractor"></i></div>
-                <h3>7Elite Terra – AgroSystems</h3>
-                <p>Systèmes de production durables, agriculture intelligente, gestion des sols et de l’eau, adaptation des systèmes productifs.</p>
-            </div>
-            <!-- EcoSystems -->
-            <div class="division-card reveal delay-1">
-                <div class="div-icon"><i class="fas fa-leaf"></i></div>
-                <h3>7Elite Terra – EcoSystems</h3>
-                <p>Gestion intégrée des sols, eau, biodiversité, restauration des milieux dégradés, solutions fondées sur la nature.</p>
-            </div>
-            <!-- Green Cities -->
-            <div class="division-card reveal delay-2">
-                <div class="div-icon"><i class="fas fa-city"></i></div>
-                <h3>7Elite Terra – Green Cities</h3>
-                <p>Aménagement d'espaces verts, résilience climatique urbaine, intégration du végétal, cadre de vie.</p>
-            </div>
-            <!-- Climate -->
-            <div class="division-card reveal">
-                <div class="div-icon"><i class="fas fa-temperature-high"></i></div>
-                <h3>7Elite Terra – Climate</h3>
-                <p>Stratégies d'adaptation climatique, plans de résilience, réduction des vulnérabilités, transition écologique.</p>
-            </div>
-            <!-- Carbon -->
-            <div class="division-card reveal delay-1">
-                <div class="div-icon"><i class="fas fa-mountain"></i></div>
-                <h3>7Elite Terra – Carbon</h3>
-                <p>Bilans carbone, stratégies bas carbone, séquestration, accompagnement climat & carbone.</p>
-            </div>
-            <!-- Remediation & Depollution -->
-            <div class="division-card highlight-card reveal delay-2">
-                <div class="div-icon"><i class="fas fa-droplet"></i></div>
-                <h3>7Elite Terra – Remediation</h3>
-                <p>Dépollution des sols et des eaux, requalification durable des sites, préparation de nouveaux usages. <strong>Levier de transformation territoriale.</strong></p>
-            </div>
-            <!-- Environmental Studies -->
-            <div class="division-card reveal">
-                <div class="div-icon"><i class="fas fa-clipboard-list"></i></div>
-                <h3>7Elite Terra – Environmental Studies</h3>
-                <p>Études d’impact, diagnostics, ingénierie environnementale, assistance à maîtrise d’ouvrage.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- MOT DU FONDATEUR -->
-<section id="mot-fondateur" class="section bg-light">
-    <div class="container">
-        <div class="founder-grid">
-            <div class="founder-content reveal-slide-left">
-                <span class="subtitle">Mot du Fondateur</span>
-                <h2>Penser aujourd'hui les territoires durables de demain</h2>
-                <p class="founder-text">« Les territoires font aujourd'hui face à des défis majeurs : pression démographique, changement climatique, raréfaction des ressources, dégradation des milieux. Ces enjeux ne peuvent plus être traités séparément.</p>
-                <p class="founder-text"><strong>7Elite Terra est née d'une conviction simple : les territoires doivent être pensés comme des systèmes vivants, durables et résilients.</strong> Notre ambition est d'accompagner les États, les villes et les organisations dans la conception de solutions capables d'anticiper les besoins futurs, de préserver le vivant et de sécuriser les usages des territoires sur le long terme.</p>
-                <p class="founder-signature">— Le Fondateur</p>
-            </div>
-            <div class="founder-visual reveal-slide-right">
-                <i class="fas fa-quote-right quote-icon"></i>
-                <div class="founder-shape"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CLIENTS / PUBLICS -->
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <span class="subtitle">Ils nous font confiance</span>
-            <h2>À qui nous nous adressons</h2>
-        </div>
-        <div class="clients-grid">
-            <div class="client-item"><i class="fas fa-flag"></i> États & gouvernements</div>
-            <div class="client-item"><i class="fas fa-building"></i> Collectivités & villes</div>
-            <div class="client-item"><i class="fas fa-globe"></i> Organisations internationales</div>
-            <div class="client-item"><i class="fas fa-briefcase"></i> Entreprises & investisseurs</div>
-            <div class="client-item"><i class="fas fa-hard-hat"></i> Projets structurants</div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT / FOOTER -->
-<footer id="contact">
-    <div class="container">
-        <div class="footer-main">
-            <div class="footer-info">
-                <h3>7ELITE<span>TERRA</span></h3>
-                <p>Ingénierie des écosystèmes durables, des territoires résilients et de la requalification environnementale.</p>
-                <p class="signature-line">7Elite Terra — architecte des territoires et des écosystèmes.</p>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <p><i class="fas fa-envelope"></i> contact@7eliteterra.com</p>
-                <p><i class="fas fa-phone-alt"></i> +33 1 00 00 00 00</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo--bold">7Elite</span><span class="logo--thin"> Terra</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#vision" class="nav-link">Vision</a></li>
+                    <li><a href="#divisions" class="nav-link">Divisions</a></li>
+                    <li><a href="#approche" class="nav-link">Approche</a></li>
+                    <li><a href="#fondateur" class="nav-link">Fondateur</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="#" class="btn-outline" id="derivesToggle">Dérivés 7Elite <i class="fas fa-chevron-down"></i></a>
                 </div>
             </div>
-            <div class="footer-links">
-                <h4>Explorer</h4>
-                <ul>
-                    <li><a href="#">Vision</a></li>
-                    <li><a href="#">Divisions</a></li>
-                    <li><a href="#">Approche</a></li>
-                    <li><a href="#">Fondateur</a></li>
-                </ul>
+            <div class="nav-mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2026 7Elite Terra – Tous droits réservés. Conception systémique et durable.</p>
+        <!-- PANEL DÉRIVÉS -->
+        <div class="derives-panel" id="derivesPanel">
+            <div class="derives-header">
+                <h4>Autres entités <span>7Elite Group</span></h4>
+                <button id="closeDerives"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="derives-grid"></div>
+            <p class="derives-foot">Cliquez sur une carte pour afficher un résumé</p>
         </div>
-    </div>
-</footer>
+    </nav>
 
-<script src="script.js"></script>
+    <main>
+        <!-- HERO -->
+        <section id="accueil" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+                    <span class="hero-tagline">Ingénierie des écosystèmes durables</span>
+                    <h1 class="hero-title">7Elite <span class="text-accent">Terra</span></h1>
+                    <p class="hero-description">
+                        Branche de <strong>7Elite Group</strong> dédiée à la conception, structuration et transformation durable des territoires. 
+                        Nous accompagnons États, villes et grands projets dans la création de systèmes territoriaux résilients, capables d'anticiper les crises climatiques et de préserver le vivant.
+                    </p>
+                    <div class="hero-stats">
+                        <div><span>+0</span> ans d'expertise</div>
+                        <div><span>7</span> divisions intégrées</div>
+                        <div><span>1</span> continents</div>
+                    </div>
+                    
+                </div>
+                <div class="hero-right" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="globe-3d">
+                        <i class="fas fa-globe-asia"></i>
+                        <div class="globe-pulse"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll" id="scrollDown">
+                <span>Défiler</span> <i class="fas fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- VISION -->
+        <section id="vision" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Notre <span class="text-accent">vision</span></h2>
+                    <p>Concevoir des territoires durables, résilients et performants, capables d'évoluer, de s'adapter et d'anticiper les besoins futurs tout en respectant les équilibres du vivant.</p>
+                </div>
+                <div class="vision-grid">
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="50">
+                        <i class="fas fa-droplet"></i>
+                        <h3>Gestion des ressources</h3>
+                        <p>Mieux gérer les ressources naturelles dans une logique d'anticipation.</p>
+                    </div>
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fas fa-city"></i>
+                        <h3>Villes adaptées</h3>
+                        <p>Adapter les villes aux enjeux climatiques et démographiques.</p>
+                    </div>
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="250">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Restauration des milieux</h3>
+                        <p>Réhabiliter les sols, l'eau et la biodiversité.</p>
+                    </div>
+                    <div class="vision-card" data-aos="zoom-in" data-aos-delay="350">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Production responsable</h3>
+                        <p>Produire mieux, plus sainement, avec performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CYCLE -->
+        <section class="section cycle">
+            <div class="container">
+                <div class="cycle-wrapper" data-aos="flip-up">
+                    <div class="badge-large">notre cycle d'intervention</div>
+                    <div class="cycle-steps">
+                        <span>diagnostic</span> <i class="fas fa-arrow-right"></i>
+                        <span>conception</span> <i class="fas fa-arrow-right"></i>
+                        <span>transformation</span> <i class="fas fa-arrow-right"></i>
+                        <span>requalification</span> <i class="fas fa-arrow-right"></i>
+                        <span>résilience long terme</span>
+                    </div>
+                    <p>Nous concevons des systèmes cohérents intégrant écosystèmes naturels, usages humains, contraintes climatiques et impératifs socioéconomiques.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVISIONS -->
+        <section id="divisions" class="section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Nos <span class="text-accent">divisions</span></h2>
+                    <p>7 pôles d'expertise pour une approche systémique.</p>
+                </div>
+                <div class="divisions-grid" id="divisionsGrid"></div>
+                <!-- MODAL RÉSUMÉ -->
+                <div class="modal" id="divisionModal">
+    <div class="modal-content">
+        <span class="modal-close"><i class="fas fa-times"></i></span>
+        <div id="modalBody"></div>
+        <button class="modal-close-btn" id="modalCloseBtn">Fermer</button>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <!-- APPROCHE -->
+        <section id="approche" class="section approche">
+            <div class="container">
+                <div class="section-header light" data-aos="fade-up">
+                    <h2>Notre <span class="text-accent">approche</span></h2>
+                    <p>Une méthodologie en trois piliers</p>
+                </div>
+                <div class="approche-grid">
+                    <div class="approche-item" data-aos="fade-right">
+                        <i class="fas fa-circle-nodes"></i>
+                        <h3>Systémique</h3>
+                        <p>Chaque territoire est un système vivant complexe : sols, eau, biodiversité, climat, activités humaines interdépendants.</p>
+                    </div>
+                    <div class="approche-item" data-aos="fade-up">
+                        <i class="fas fa-binoculars"></i>
+                        <h3>Anticipatrice</h3>
+                        <p>Solutions pensées pour les défis futurs : croissance démographique, raréfaction des ressources, évolution climatique.</p>
+                    </div>
+                    <div class="approche-item" data-aos="fade-left">
+                        <i class="fas fa-brain"></i>
+                        <h3>Ingénierie & décision</h3>
+                        <p>Études, pilotage, aide à la décision pour sécuriser les choix stratégiques de long terme.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FONDATEUR (avec photo à droite) -->
+        <section id="fondateur" class="section fondateur">
+            <div class="container">
+                <div class="fondateur-grid">
+                    <div class="fondateur-text" data-aos="fade-right">
+                        <span class="quote-mark"><i class="fas fa-quote-left"></i></span>
+                        <h2>Penser aujourd'hui les territoires durables de demain.</h2>
+                        <p>Les territoires font face à des défis majeurs : pression démographique, changement climatique, raréfaction des ressources, dégradation des milieux. Ces enjeux ne peuvent plus être traités séparément.</p>
+                        <p><strong>7Elite Terra est née d'une conviction simple : les territoires doivent être pensés comme des systèmes vivants, durables et résilients.</strong> Notre ambition est d'accompagner les États, les villes et les organisations dans la conception de solutions capables d'anticiper les besoins futurs, de préserver le vivant et de sécuriser les usages des territoires sur le long terme.</p>
+                        <div class="fondateur-signature">— Le Fondateur</div>
+                    </div>
+                    <div class="fondateur-image" data-aos="fade-left">
+    <!-- Photo du Directeur Général -->
+    <img src="image/5.jpg" alt="Directeur Général de 7Elite Terra" class="directeur-photo">
+</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & CLIENTS -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-up">
+                        <h2>Intervenons ensemble</h2>
+                        <p><strong>7Elite Terra s'adresse aux :</strong></p>
+                        <ul>
+                            <li><i class="fas fa-globe"></i> États et gouvernements</li>
+                            <li><i class="fas fa-landmark"></i> Collectivités territoriales et villes</li>
+                            <li><i class="fas fa-handshake"></i> Organisations internationales et bailleurs</li>
+                            <li><i class="fas fa-building"></i> Entreprises et investisseurs</li>
+                            <li><i class="fas fa-hard-hat"></i> Projets structurants nationaux et régionaux</li>
+                        </ul>
+                        <p class="signature-line"><strong>7Elite Terra</strong> — conçoit, transforme et sécurise les territoires durables de demain.</p>
+                    </div>
+                    <div class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                        <form id="contactForm">
+                            <h3>Contactez un expert</h3>
+                            <input type="text" placeholder="Nom / Organisation" required>
+                            <input type="email" placeholder="Email professionnel" required>
+                            <select required>
+                                <option value="">Division concernée</option>
+                                <option>AgroSystems</option>
+                                <option>EcoSystems</option>
+                                <option>Green Cities</option>
+                                <option>Climate</option>
+                                <option>Carbon</option>
+                                <option>Remediation & Depollution</option>
+                                <option>Environmental Studies</option>
+                            </select>
+                            <textarea rows="3" placeholder="Votre message..."></textarea>
+                            <button type="submit" class="btn-primary btn-block">Envoyer <i class="fas fa-paper-plane"></i></button>
+                            <p class="form-feedback" id="formFeedback"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PROFESSIONNEL -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo--bold">7Elite</span><span class="logo--thin"> Terra</span>
+                    </div>
+                    <p class="footer-description">Ingénierie des écosystèmes durables, des territoires résilients et de la requalification environnementale.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#divisions">Divisions</a></li>
+                        <li><a href="#approche">Approche</a></li>
+                        <li><a href="#fondateur">Fondateur</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@7elite-terra.com</li>
+                        <li><i class="fas fa-phone-alt"></i> +33 1 00 00 00 00</li>
+                        <li><i class="fas fa-map-pin"></i> Paris, France</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Mentions</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Gestion des cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 7Elite Terra — Une entité de 7Elite Group. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
